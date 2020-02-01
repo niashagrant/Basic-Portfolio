@@ -1,5 +1,5 @@
 html {
-  background-color: grey;
+  background-color: rgb(240, 240, 240);
 }
 
 .container {
@@ -25,6 +25,8 @@ html {
   height: 5%;
   padding-left: 0;
   margin: 0;
+  border-bottom: solid rgb(200, 200, 200) 1px;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -46,10 +48,14 @@ li {
 }
 
 .aboutMe {
-  border: dashed red 2px;
+  border: solid rgb(227, 227, 227) 1px;
   background-color: white;
   padding: 10px;
   width: 960px;
+}
+
+.contact {
+  color: rgb(73, 170, 165);
 }
 
 .footer {
@@ -61,5 +67,5 @@ li {
   background-color: #666666;
   color: white;
   text-align: center;
-  border-top: solid black 15px;
+  border-top: solid rgb(73, 170, 165) 15px;
 }
