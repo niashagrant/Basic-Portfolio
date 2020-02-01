@@ -1,41 +1,45 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-          <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li id="myName">Niasha Abaglo-Grant</li>
-          </ul>
-        </div>
-      </header>
-  
-      <section class="container aboutMe">
-        <h1 class="contact" style="padding: 10px;">Contact</h1>
-        <hr />
-
-    <form action="/my-handling-form-page" method="post"> 
+      <div class="container">
         <ul>
-         <li>
-           <label for="name">Name:</label>
-           <input type="text" id="name" name="user_name" />
-         </li>
-         <li>
-           <label for="mail">E-mail:</label>
-           <input type="email" id="mail" name="user_email" />
-         </li>
-         <li>
-           <label for="msg">Message:</label>
-           <textarea id="msg" name="user_message"></textarea>
-         </li>
-        </section>
-</body>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li id="myName">Niasha Abaglo-Grant</li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="container aboutMe">
+      <h1 class="contact" style="padding: 10px;">Contact</h1>
+      <hr />
+
+      <form action="">
+        <label for="Name">Name</label>
+        <br />
+        <input type="text" placeholder="Enter Name" name="name" />
+        <label for="Email">Email</label>
+        <br />
+        <input type="text" placeholder="example@gmail.com" name="email" />
+        <br />
+        <label for="Message">Message</label>
+        <br />
+        <textarea name="message" id="" cols="187" rows="10"></textarea>
+
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div>Copyright</div>
+    </footer>
+  </body>
 </html>

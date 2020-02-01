@@ -58,6 +58,30 @@ li {
   color: rgb(73, 170, 165);
 }
 
+form {
+  width: 960px;
+}
+
+input {
+  width: 960px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  border: solid rgb(227, 227, 227) 1px;
+  width: 960px;
+}
+
+button {
+  background-color: rgb(73, 170, 165);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+}
+
 .footer {
   position: fixed;
   left: 0;
