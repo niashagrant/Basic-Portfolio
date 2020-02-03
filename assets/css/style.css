@@ -1,5 +1,7 @@
 html {
   background-color: rgb(240, 240, 240);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b1b0b0;
 }
 
 .container {
@@ -20,42 +22,74 @@ html {
   padding-left: 20px;
 }
 
-.header {
-  background: white;
-  height: 5%;
-  padding-left: 0;
-  margin: 0;
-  border-bottom: solid rgb(200, 200, 200) 1px;
-  margin-bottom: 20px;
+h1 {
+  color: rgb(100, 100, 100);
 }
 
-ul {
+#wrapper {
+  /* background-color: white; */
+  background-color: rgba(102, 102, 102, 0.2);
+  border-bottom: solid grey 1px;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+header {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 7%;
+  padding: 0;
+  font-family: "Georgia", Times, Times New Roman, serif;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
   list-style-type: none;
-  margin: 0;
+  margin-top: 15px;
   padding: 0;
   overflow: hidden;
-  background-color: white;
 }
 
-li {
-  float: right;
-  display: block;
-  color: lightgrey;
-  text-align: center;
-  padding: 14px 16px;
+nav li {
+  color: gray;
+  display: inline;
+  padding: 14px 10px;
   text-decoration: none;
-  border-right: solid grey 0.5px;
+}
+
+header h1 {
+  color: rgb(73, 170, 165);
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgba(255, 192, 203, 0.5);
+  margin: 0 0 0;
+  float: left;
+  font-weight: normal;
+}
+
+nav a {
+  color: #666666;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: pink;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .aboutMe {
-  border: solid rgb(227, 227, 227) 1px;
-  background-color: white;
+  border: solid rgb(197, 196, 196) 1px;
+  background-color: rgb(245, 243, 243);
   padding: 10px;
   width: 960px;
-}
-
-.contact {
-  color: rgb(73, 170, 165);
 }
 
 form {
@@ -65,13 +99,19 @@ form {
 input {
   width: 960px;
   height: 25px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 textarea {
   border: solid rgb(227, 227, 227) 1px;
   width: 960px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  color: rgb(184, 181, 181);
 }
 
 button {
@@ -80,6 +120,45 @@ button {
   border: none;
   padding: 10px 20px;
   margin-top: 15px;
+}
+
+.category {
+  position: relative;
+}
+.category > img {
+  display: block;
+}
+.category-header {
+  background-color: rgba(73, 170, 165, 0.5);
+  display: block;
+  color: #fff;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 10px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.category-header h4 {
+  margin: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  align-items: stretch;
+  justify-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.grid img {
+  max-width: 100%;
+  padding: 1px;
+  height: 200px;
+  width: 300px;
 }
 
 .footer {
@@ -92,4 +171,8 @@ button {
   color: white;
   text-align: center;
   border-top: solid rgb(73, 170, 165) 15px;
+}
+
+#copyRight {
+  margin-top: 20px;
 }
