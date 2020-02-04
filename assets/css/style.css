@@ -61,10 +61,12 @@ nav li {
 }
 
 header h1 {
-  color: rgb(73, 170, 165);
+  /* color: rgb(73, 170, 165); */
+  color: white;
+  background-color: rgb(73, 170, 165);
   padding: 10px;
   margin-top: 20px;
-  background-color: rgba(255, 192, 203, 0.5);
+  /* background-color: rgba(255, 192, 203, 0.5); */
   margin: 0 0 0;
   float: left;
   font-weight: normal;
@@ -76,7 +78,7 @@ nav a {
 }
 
 nav a:hover {
-  color: pink;
+  color: rgb(73, 170, 165);
 }
 
 header::after {
@@ -90,6 +92,11 @@ header::after {
   background-color: rgb(245, 243, 243);
   padding: 10px;
   width: 960px;
+}
+
+.aboutMe img {
+  height: 200px;
+  width: 300px;
 }
 
 form {
