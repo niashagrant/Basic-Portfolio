@@ -1,13 +1,19 @@
+h1,
+h2,
+h3 {
+  font-family: "Georgia", Times, Times New Roman, serif;
+}
+
 html {
   background-color: rgb(240, 240, 240);
   font-family: Arial, Helvetica, sans-serif;
   color: #b1b0b0;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0;
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2;
 }
 
 #myName {
@@ -16,18 +22,38 @@ html {
   float: left;
 }
 
-#myImg {
-  float: left;
-  padding-right: 20px;
-  padding-left: 20px;
+.block {
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+  overflow: auto;
+  border: solid lightgrey 1px;
 }
 
 h1 {
+  color: rgb(73, 170, 165);
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+}
+
+#bio-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  padding: 20px 0px 10px 40px;
+  float: left;
+}
+
+p {
+  padding: 10px 40px 0 40px;
+}
+
+.nameTag h1 {
   color: rgb(100, 100, 100);
 }
 
 #wrapper {
-  /* background-color: white; */
   background-color: rgba(102, 102, 102, 0.2);
   border-bottom: solid grey 1px;
   max-width: 100%;
@@ -37,9 +63,8 @@ h1 {
 header {
   max-width: 960px;
   margin: 0 auto;
-  height: 7%;
+  height: 76px;
   padding: 0;
-  font-family: "Georgia", Times, Times New Roman, serif;
 }
 
 nav {
@@ -48,25 +73,22 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin-top: 15px;
-  padding: 0;
+  margin-top: 20px;
   overflow: hidden;
 }
 
 nav li {
   color: gray;
   display: inline;
-  padding: 14px 10px;
+  margin-left: 15px;
   text-decoration: none;
 }
 
 header h1 {
-  /* color: rgb(73, 170, 165); */
   color: white;
   background-color: rgb(73, 170, 165);
   padding: 10px;
   margin-top: 20px;
-  /* background-color: rgba(255, 192, 203, 0.5); */
   margin: 0 0 0;
   float: left;
   font-weight: normal;
@@ -87,24 +109,17 @@ header::after {
   clear: both;
 }
 
-.aboutMe {
-  border: solid rgb(197, 196, 196) 1px;
-  background-color: rgb(245, 243, 243);
-  padding: 10px;
-  width: 960px;
-}
-
-.aboutMe img {
-  height: 200px;
-  width: 300px;
+hr {
+  max-width: 880px;
 }
 
 form {
-  width: 960px;
+  width: 880px;
+  padding: 10px 20px 0 40px;
 }
 
 input {
-  width: 960px;
+  width: 880px;
   height: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -112,7 +127,7 @@ input {
 
 textarea {
   border: solid rgb(227, 227, 227) 1px;
-  width: 960px;
+  width: 880px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -135,48 +150,41 @@ button:hover {
 
 .category {
   position: relative;
+  width: 300px;
+  float: left;
+  margin: 20px 0 20px 40px;
 }
 
 .category > img {
   display: block;
 }
 
-.category-header {
+.category-text {
   background-color: rgba(73, 170, 165, 0.5);
-  display: block;
   color: #fff;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
-  padding: 10px 60px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin: -30% 0 auto 40px;
+  position: relative;
+  height: 40px;
+  width: 300px;
+  text-align: center;
 }
 
-.category-header:hover {
+.category-text:hover {
   background-color: lightsalmon;
 }
 
-.category-header h4 {
-  margin: 0px;
+h4 {
+  padding-top: 8px;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  align-items: stretch;
-  justify-items: center;
-  position: relative;
-  text-align: center;
-  color: white;
+  width: 720px;
 }
 
 .grid img {
-  max-width: 100%;
-  padding: 1px;
-  height: 200px;
   width: 300px;
+  height: 200px;
+  margin: 20px 0 20px 40px;
 }
 
 .footer {
@@ -189,6 +197,19 @@ button:hover {
   color: white;
   text-align: center;
   border-top: solid rgb(73, 170, 165) 15px;
+}
+
+.pFooter {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7%;
+  background-color: #666666;
+  color: white;
+  text-align: center;
+  border-top: solid rgb(73, 170, 165) 15px;
+  margin-top: 55px;
 }
 
 #copyRight {
