@@ -129,23 +129,34 @@ button {
   margin-top: 15px;
 }
 
+button:hover {
+  background-color: lightpink;
+}
+
 .category {
   position: relative;
 }
+
 .category > img {
   display: block;
 }
+
 .category-header {
   background-color: rgba(73, 170, 165, 0.5);
   display: block;
   color: #fff;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
-  padding: 10px 30px;
+  padding: 10px 60px;
   position: absolute;
   bottom: 0;
   left: 0;
 }
+
+.category-header:hover {
+  background-color: lightsalmon;
+}
+
 .category-header h4 {
   margin: 0px;
 }
